@@ -15,6 +15,7 @@ document.getElementById("again").addEventListener("click",function(){
     score=20;
     document.getElementById("score").innerHTML=`&#128293; Score: ${score}`;
     document.getElementById("input").value='';
+    document.querySelector('.trueNumber').textContent='?';
 
 },true);
 
@@ -23,6 +24,7 @@ document.getElementById("check").addEventListener("click",function(){
 
     if (input == randomNumber){
         document.querySelector('.message').innerHTML=" &#127919; Correct Number!";
+        document.querySelector('.trueNumber').textContent=randomNumber;
         document.body.style.backgroundColor="green";
         highscore = highscore < score ? score : highscore;
         document.querySelector('.highscore').innerHTML=`&#127941; Highscore: ${highscore}`;
