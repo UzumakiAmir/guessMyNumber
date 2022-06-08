@@ -1,6 +1,7 @@
 // create a random number between 1 to 20
 function createRandomNumber(){
-    return Math.floor(Math.random()*21);
+    // Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive)
+    return Math.floor(Math.random()*20)+1;
 }
 let randomNumber = createRandomNumber();
 let score = 20;
@@ -25,6 +26,9 @@ document.getElementById("check").addEventListener("click",function(){
         document.body.style.backgroundColor="green";
         highscore = highscore < score ? score : highscore;
         document.querySelector('.highscore').innerHTML=`&#127941; Highscore: ${highscore}`;
+    }
+    else if(!input){
+        document.querySelector('.message').innerHTML="⛔ not a number";
     }
     else if(Number(input)>randomNumber){
         document.querySelector('.message').innerHTML="&#128314; Too high";
