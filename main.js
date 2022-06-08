@@ -16,6 +16,7 @@ document.getElementById("again").addEventListener("click",function(){
     document.getElementById("score").innerHTML=`&#128293; Score: ${score}`;
     document.getElementById("input").value='';
     document.querySelector('.trueNumber').textContent='?';
+    document.querySelector('.message').innerHTML="Start Guessing...";
 
 },true);
 
