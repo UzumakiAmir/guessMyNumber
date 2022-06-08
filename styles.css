@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: rgb(108, 195, 108); */
+    background-color: rgb(39, 51, 39);
+    font-family: 'Press Start 2P', sans-serif;
+}
+header{
+    padding: 30px 30px 0px 30px;
+    
+    border-bottom: 6px solid aliceblue;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    background-color: aliceblue;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.rule{
+    color: aliceblue;
+}
+header h1{
+    margin: 30px 0;
+    text-align: center;
+    color: white;
+}
+.trueNumber{
+    font-size: 40px;
+    background-color: aliceblue;
+    width: 8rem;
+    padding: 20px 40px;
+    text-align: center;
+    margin: 0px auto;
+    transform: translateY(40px);
+    
+}
+.main{
+    padding: 60px 50px;
+    display: flex;
+    justify-content: space-around;
+    height: 60vh;
+}
+
+.rightPannel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.rightPannel p{
+    color: aliceblue;
+}
+.leftPannel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.guess{
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 25px;
+    outline: 0px;
+    width: 200px;
+    padding: 30px ;
+}
+.guess::selection{
+    border: 5px solid brown;
+}
