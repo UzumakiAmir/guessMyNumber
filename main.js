@@ -21,7 +21,6 @@ document.getElementById("again").addEventListener("click",function(){
 
 document.getElementById("check").addEventListener("click",function(){
     const input = document.getElementById("input").value; 
-
     if (input == randomNumber){
         document.querySelector('.message').innerHTML=" &#127919; Correct Number!";
         document.querySelector('.trueNumber').textContent=randomNumber;
@@ -41,6 +40,11 @@ document.getElementById("check").addEventListener("click",function(){
         document.querySelector('.message').innerHTML="&#128315; Too low";
         score-=1;
         document.getElementById("score").innerHTML=`&#128293; Score: ${score}`;
+    }
+    if(score==0){
+        document.querySelector('.message').textContent=" 💥 you lost the game";
+        document.getElementById("check").style.display='none';
+        
     }
       
 },true);
